@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="Page1.css">
+</head>
+
+<body>
+        <div class="container">
+                <h2>Register Below</h2>
+                <form id="registrationForm">
+                        <label for="first">First Name</label>
+                        <input type="text" name="first_name" id="first" required placeholder="Enter your first name">
+                        <div id="firstNameError" class="error-message"></div>
+
+                        <label for="last">Last Name</label>
+                        <input type="text" name="last_name" id="last" required placeholder="Enter your last name">
+                        <div id="lastNameError" class="error-message"></div>
+
+                        <label for="mail">Email</label>
+                        <input type="email" name="email" id="mail" required placeholder="Enter your email address">
+                        <div id="emailError" class="error-message"></div>
+
+                        <button type="submit">Next</button>
+                </form>
+        </div>
+        <script src="Page1.js"></script>
+</body>
+
+</html>

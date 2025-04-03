@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Online Exam</title>
+        <link rel="stylesheet" href="Exam.css">
+</head>
+
+<body>
+        <div id="name-container">
+                <h1>Enter Your Full Name:</h1>
+                <label for="student-name-input">Your Name:</label>
+                <input type="text" id="student-name-input" placeholder="Your Name">
+                <div id="name-error" class="error-message"></div>
+                <button id="start-exam-button">Start Exam</button>
+        </div>
+        <div id="exam-container" style="display: none;">
+                <div id="timer-display"></div>
+                <div id="progressbar">
+                        <div id="progress"></div>
+                </div>
+                <div id="questions-container"></div>
+                <div class="button-container">
+                        <button id="previous-button">Previous</button>
+                        <div id="question-number-display"></div>
+                        <button id="next-button">Next</button>
+                        <button id="mark-button">Mark Question</button>
+                </div>
+                <button id="submit-button">Submit Exam</button>
+                <div id="notification" class="notification" style="display: none;"></div>
+                <div id="marked-questions-container">
+                        <h3>Marked Questions</h3>
+                        <ul id="marked-questions-list"></ul>
+                </div>
+        </div>
+        <script src="Exam.js"></script>
+</body>
+
+</html>
